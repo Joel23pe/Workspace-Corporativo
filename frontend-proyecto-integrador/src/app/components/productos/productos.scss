@@ -1,0 +1,54 @@
+.productos-container {
+  padding: 1.5rem;
+
+  h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+
+  .search-box {
+    margin-bottom: 1.5rem;
+
+    input {
+      width: 100%;
+      max-width: 350px;
+      padding: 0.6rem 1rem;
+      border: 1px solid #ced4da;
+      border-radius: 6px;
+      font-size: 0.95rem;
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+    }
+  }
+
+  .productos-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    th, td {
+      padding: 0.85rem 1.2rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #343a40;
+      color: white;
+      font-weight: 500;
+    }
+
+    tr {
+      border-bottom: 1px solid #e9ecef;
+
+      &:hover {
+        background-color: #f8f9fa;
+      }
+    }
+  }
+}

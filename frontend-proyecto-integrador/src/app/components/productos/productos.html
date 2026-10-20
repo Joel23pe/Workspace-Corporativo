@@ -1,0 +1,29 @@
+<div class="productos-container">
+  <h2>Catálogo de Productos</h2>
+
+  <div class="search-box">
+    <input
+      type="text"
+      [(ngModel)]="filtro"
+      placeholder="Buscar producto..."
+    />
+  </div>
+
+  <table class="productos-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nombre del Producto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of productosFiltrados; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ prod }}</td>
+      </tr>
+      <tr *ngEmpty>
+        <td colspan="2">No se encontraron productos.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
